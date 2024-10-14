@@ -1,0 +1,11 @@
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/bin/Debug/net8.0/PruebaTecnica.Domain.deps.json
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/bin/Debug/net8.0/PruebaTecnica.Domain.dll
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/bin/Debug/net8.0/PruebaTecnica.Domain.pdb
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.AssemblyInfoInputs.cache
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.AssemblyInfo.cs
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.csproj.CoreCompileInputs.cache
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.dll
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/refint/PruebaTecnica.Domain.dll
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/PruebaTecnica.Domain.pdb
+/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/Debug/net8.0/ref/PruebaTecnica.Domain.dll
