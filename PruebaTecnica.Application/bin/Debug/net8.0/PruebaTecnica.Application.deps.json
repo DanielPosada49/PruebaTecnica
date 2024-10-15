@@ -9,7 +9,8 @@
       "PruebaTecnica.Application/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Http": "2.2.0",
-          "PruebaTecnica.Domain": "1.0.0"
+          "PruebaTecnica.Domain": "1.0.0",
+          "TimeZoneConverter": "6.1.0"
         },
         "runtime": {
           "PruebaTecnica.Application.dll": {}
@@ -123,6 +124,14 @@
       "System.Memory/4.5.1": {},
       "System.Runtime.CompilerServices.Unsafe/4.5.1": {},
       "System.Text.Encodings.Web/4.5.0": {},
+      "TimeZoneConverter/6.1.0": {
+        "runtime": {
+          "lib/net6.0/TimeZoneConverter.dll": {
+            "assemblyVersion": "6.1.0.0",
+            "fileVersion": "6.1.0.0"
+          }
+        }
+      },
       "PruebaTecnica.Domain/1.0.0": {
         "runtime": {
           "PruebaTecnica.Domain.dll": {
@@ -236,6 +245,13 @@
       "sha512": "sha512-Xg4G4Indi4dqP1iuAiMSwpiWS54ZghzR644OtsRCm/m/lBMG8dUBhLVN7hLm8NNrNTR+iGbshCPTwrvxZPlm4g==",
       "path": "system.text.encodings.web/4.5.0",
       "hashPath": "system.text.encodings.web.4.5.0.nupkg.sha512"
+    },
+    "TimeZoneConverter/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UGdtyKWJqXXinyvGB9X6NVoIYbTAidoZYmn3aXzxeEYC9+OL8vF36eDt1qjb6RqBkWDl4v7iE84ecI+dFhA80A==",
+      "path": "timezoneconverter/6.1.0",
+      "hashPath": "timezoneconverter.6.1.0.nupkg.sha512"
     },
     "PruebaTecnica.Domain/1.0.0": {
       "type": "project",

@@ -4,11 +4,15 @@ namespace PruebaTecnica.Domain.Interfaces;
 
 public interface IUnitOfWork : IDisposable
 {
-    IRepository<Employee> EmployeeRepository { get; }
+    IRepository<TblEmployee> EmployeeRepository { get; }
+    IRepository<TblDepartment> DepartmenRepository { get; }
+    IRepository<TblProject> ProjectRepository { get; }
+    IRepository<TblPositionHistory> PositionHistory { get; }
     object GetEmployees();
     object GetEmployee(int id);
-    Employee SetEmployee(Employee employee);
-    Employee UpdateEmployee(Employee employee);
-    Employee DeleteEmpployee(int id);
+    TblEmployee SetEmployee(TblEmployee employee);
+    TblEmployee UpdateEmployee(TblEmployee employee);
+    TblEmployee DeleteEmpployee(int id);
+    TblPositionHistory GetPositionByEmployeeId(int id);
     void save();
 }

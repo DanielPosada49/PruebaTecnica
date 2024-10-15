@@ -1,10 +1,10 @@
 ﻿namespace PruebaTecnica.Domain.Entities;
 
-public partial class Department
+public partial class TblDepartment
 {
     public int Id { get; set; }
 
     public string Name { get; set; } = null!;
 
-    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
+    public virtual ICollection<TblEmployee> Employees { get; set; } = new List<TblEmployee>();
 }

@@ -1,13 +1,13 @@
 using PruebaTecnica.Application.DataTransferObjects;
-using PruebaTecnica.Domain.Entities;
+using PruebaTecnica.Domain.Request;
 
 namespace PruebaTecnica.Application.Contracts;
 
 public interface IEmployeeUseCase
 {
-    Task<ServiceResponseDto> GetEmployees();
-    Task<ServiceResponseDto> GetEmployeeById(int id);
-    Task<ServiceResponseDto> CreateEmployee(Employee employee);
-    Task<ServiceResponseDto> UpdateEmployee(int employee);
-    Task<ServiceResponseDto> DeleteEmployee(int employeeId);
+    Task<object> GetEmployees();
+    Task<object> GetEmployeeById(int id);
+    Task<object> CreateEmployee(EmployeeRequest employee);
+    Task<object> UpdateEmployee(UpdateEmployeeRequest employee);
+    Task<object> DeleteEmployee(int employeeId);
 }

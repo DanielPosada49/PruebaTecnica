@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj": {}
+    "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj": {}
   },
   "projects": {
-    "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj": {
+    "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
+        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
         "projectName": "PruebaTecnica.Application",
-        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
+        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
         "packagesPath": "/Users/danielposada/.nuget/packages/",
-        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/obj/",
+        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielposada/.nuget/NuGet/NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj": {
-                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj"
+              "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj": {
+                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj"
               }
             }
           }
@@ -50,6 +50,10 @@
             "Microsoft.AspNetCore.Http": {
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "TimeZoneConverter": {
+              "target": "Package",
+              "version": "[6.1.0, )"
             }
           },
           "imports": [
@@ -72,14 +76,14 @@
         }
       }
     },
-    "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj": {
+    "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
+        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
         "projectName": "PruebaTecnica.Domain",
-        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
+        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
         "packagesPath": "/Users/danielposada/.nuget/packages/",
-        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/",
+        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielposada/.nuget/NuGet/NuGet.Config"
@@ -130,14 +134,14 @@
         }
       }
     },
-    "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj": {
+    "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj",
+        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj",
         "projectName": "PruebaTecnica.Infrastructure",
-        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj",
+        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj",
         "packagesPath": "/Users/danielposada/.nuget/packages/",
-        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/obj/",
+        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielposada/.nuget/NuGet/NuGet.Config"
@@ -152,8 +156,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj": {
-                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj"
+              "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj": {
+                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj"
               }
             }
           }
@@ -208,14 +212,14 @@
         }
       }
     },
-    "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj": {
+    "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
+        "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
         "projectName": "PruebaTecnica.WebApi",
-        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
+        "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
         "packagesPath": "/Users/danielposada/.nuget/packages/",
-        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/obj/",
+        "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/danielposada/.nuget/NuGet/NuGet.Config"
@@ -230,8 +234,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj": {
-                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj"
+              "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj": {
+                "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Infrastructure/PruebaTecnica.Infrastructure.csproj"
               }
             }
           }

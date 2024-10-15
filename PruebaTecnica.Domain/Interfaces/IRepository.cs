@@ -1,5 +1,3 @@
-using System;
-
 namespace PruebaTecnica.Domain.Interfaces;
 
 public interface IRepository<T> where T : class

@@ -1,7 +1,7 @@
 ﻿
 namespace PruebaTecnica.Domain.Entities;
 
-public partial class Project
+public partial class TblProject
 {
     public int Id { get; set; }
 
@@ -9,5 +9,5 @@ public partial class Project
 
     public string Description { get; set; } = null!;
 
-    public virtual ICollection<Employee> Employees { get; set; } = new List<Employee>();
+    public virtual ICollection<TblEmployee> Employees { get; set; } = new List<TblEmployee>();
 }

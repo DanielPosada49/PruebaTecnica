@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pwjvM5Rdxx0=",
+  "dgSpecHash": "xHVU8AWD5d8=",
   "success": true,
-  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
+  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.WebApi/PruebaTecnica.WebApi.csproj",
   "expectedPackageFiles": [
     "/Users/danielposada/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/microsoft.aspnetcore.http/2.2.0/microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
@@ -58,7 +58,8 @@
     "/Users/danielposada/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/system.text.encoding.codepages/6.0.0/system.text.encoding.codepages.6.0.0.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
-    "/Users/danielposada/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512"
+    "/Users/danielposada/.nuget/packages/system.threading.channels/6.0.0/system.threading.channels.6.0.0.nupkg.sha512",
+    "/Users/danielposada/.nuget/packages/timezoneconverter/6.1.0/timezoneconverter.6.1.0.nupkg.sha512"
   ],
   "logs": []
 }

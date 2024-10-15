@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2MlhoWaNf94=",
+  "dgSpecHash": "XgPTL6yPxMs=",
   "success": true,
-  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
+  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
   "expectedPackageFiles": [
     "/Users/danielposada/.nuget/packages/coverlet.collector/6.0.0/coverlet.collector.6.0.0.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/microsoft.codecoverage/17.8.0/microsoft.codecoverage.17.8.0.nupkg.sha512",

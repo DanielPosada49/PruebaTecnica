@@ -5513,11 +5513,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
+      "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
       "projectName": "PruebaTecnica.Test",
-      "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
+      "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Test/PruebaTecnica.Test.csproj",
       "packagesPath": "/Users/danielposada/.nuget/packages/",
-      "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Test/obj/",
+      "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Test/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/danielposada/.nuget/NuGet/NuGet.Config"

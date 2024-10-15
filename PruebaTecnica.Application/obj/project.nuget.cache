@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DnXYqu3ypZM=",
+  "dgSpecHash": "Beau3fTtEDc=",
   "success": true,
-  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
+  "projectFilePath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Application/PruebaTecnica.Application.csproj",
   "expectedPackageFiles": [
     "/Users/danielposada/.nuget/packages/microsoft.aspnetcore.http/2.2.0/microsoft.aspnetcore.http.2.2.0.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/microsoft.aspnetcore.http.abstractions/2.2.0/microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
@@ -17,7 +17,8 @@
     "/Users/danielposada/.nuget/packages/system.componentmodel.annotations/4.5.0/system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/system.memory/4.5.1/system.memory.4.5.1.nupkg.sha512",
     "/Users/danielposada/.nuget/packages/system.runtime.compilerservices.unsafe/4.5.1/system.runtime.compilerservices.unsafe.4.5.1.nupkg.sha512",
-    "/Users/danielposada/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512"
+    "/Users/danielposada/.nuget/packages/system.text.encodings.web/4.5.0/system.text.encodings.web.4.5.0.nupkg.sha512",
+    "/Users/danielposada/.nuget/packages/timezoneconverter/6.1.0/timezoneconverter.6.1.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -14,13 +14,13 @@ public partial class PruebaTecnicaContext : DbContext
     {
     }
 
-    public virtual DbSet<Department> Departments { get; set; }
+    public virtual DbSet<TblDepartment> Departments { get; set; }
 
-    public virtual DbSet<Employee> Employees { get; set; }
+    public virtual DbSet<TblEmployee> Employees { get; set; }
 
-    public virtual DbSet<PositionHistory> PositionHistories { get; set; }
+    public virtual DbSet<TblPositionHistory> PositionHistories { get; set; }
 
-    public virtual DbSet<Project> Projects { get; set; }
+    public virtual DbSet<TblProject> Projects { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -28,7 +28,7 @@ public partial class PruebaTecnicaContext : DbContext
             .UseCollation("utf8mb4_0900_ai_ci")
             .HasCharSet("utf8mb4");
 
-        modelBuilder.Entity<Department>(entity =>
+        modelBuilder.Entity<TblDepartment>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
@@ -42,9 +42,9 @@ public partial class PruebaTecnicaContext : DbContext
                 .HasColumnName("name");
         });
 
-        modelBuilder.Entity<Employee>(entity =>
+        modelBuilder.Entity<TblEmployee>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PRIMARY");
+            entity.HasKey(e => e.DocumentId).HasName("PRIMARY");
 
             entity.ToTable("employees");
 
@@ -52,9 +52,9 @@ public partial class PruebaTecnicaContext : DbContext
 
             entity.HasIndex(e => e.ProjectId, "projectId");
 
-            entity.Property(e => e.Id)
+            entity.Property(e => e.DocumentId)
                 .ValueGeneratedNever()
-                .HasColumnName("id");
+                .HasColumnName("documentId");
             entity.Property(e => e.CurrentPosition)
                 .HasMaxLength(50)
                 .HasColumnName("currentPosition");
@@ -77,18 +77,18 @@ public partial class PruebaTecnicaContext : DbContext
                 .HasConstraintName("employees_ibfk_1");
         });
 
-        modelBuilder.Entity<PositionHistory>(entity =>
+        modelBuilder.Entity<TblPositionHistory>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
             entity.ToTable("positionHistory");
 
-            entity.HasIndex(e => e.EmployeeId, "employeeId");
+            entity.HasIndex(e => e.DocumentId, "documentId");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
-            entity.Property(e => e.EmployeeId).HasColumnName("employeeId");
+            entity.Property(e => e.DocumentId).HasColumnName("documentId");
             entity.Property(e => e.EndDate)
                 .HasColumnType("datetime")
                 .HasColumnName("endDate");
@@ -98,14 +98,9 @@ public partial class PruebaTecnicaContext : DbContext
             entity.Property(e => e.StartDate)
                 .HasColumnType("datetime")
                 .HasColumnName("startDate");
-
-            entity.HasOne(d => d.Employee).WithMany(p => p.PositionHistories)
-                .HasForeignKey(d => d.EmployeeId)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("positionhistory_ibfk_1");
         });
 
-        modelBuilder.Entity<Project>(entity =>
+        modelBuilder.Entity<TblProject>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 

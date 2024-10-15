@@ -1,3 +1,4 @@
+using PruebaTecnica.WebApi.DI.Application;
 using PruebaTecnica.WebApi.DI.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMySql();
 builder.Services.AddControllers();
+
+builder.Services.AddUseCases();
 
 
 var app = builder.Build();

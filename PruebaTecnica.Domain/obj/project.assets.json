@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
+      "projectUniqueName": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
       "projectName": "PruebaTecnica.Domain",
-      "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
+      "projectPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/PruebaTecnica.Domain.csproj",
       "packagesPath": "/Users/danielposada/.nuget/packages/",
-      "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica/PruebaTecnica.Domain/obj/",
+      "outputPath": "/Users/danielposada/Desktop/C#/PruebaTecnica-1/PruebaTecnica.Domain/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/danielposada/.nuget/NuGet/NuGet.Config"
