@@ -10,7 +10,8 @@ public static class DependencyInjection{
 
     public static IServiceCollection AddMySql(this IServiceCollection services){
 
-        var ConnectionString = "Server=localhost; database=PruebaTecnica; user=root; pwd=S1d10squ13r3$.;";
+        //Server=localhost; database=PruebaTecnica; user=root; pwd=;
+        var ConnectionString = "Aca va la cadena de conexion";
 
         services.AddDbContext<PruebaTecnicaContext>(options => 
             options.UseMySql(ConnectionString, ServerVersion.AutoDetect(ConnectionString)));
