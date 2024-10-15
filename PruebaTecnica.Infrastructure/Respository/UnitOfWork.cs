@@ -16,7 +16,6 @@ public class UnitOfWork : IUnitOfWork
     public UnitOfWork(PruebaTecnicaContext context){
         _context = context;
     }
-
     public IRepository<TblEmployee> EmployeeRepository {
         get{
             if(this.employeeRepository == null){
@@ -33,7 +32,6 @@ public class UnitOfWork : IUnitOfWork
             return departmenRepository;
         }
     }
-
     public IRepository<TblProject> ProjectRepository {
         get{
             if(this.projectRepository == null){
@@ -42,7 +40,6 @@ public class UnitOfWork : IUnitOfWork
             return projectRepository;
         }
     }
-
     public IRepository<TblPositionHistory> PositionHistory {
         get{
             if(this.positionHistoryRepository == null){
@@ -51,24 +48,10 @@ public class UnitOfWork : IUnitOfWork
             return positionHistoryRepository;
         }
     }
-
     public TblEmployee DeleteEmpployee(int id)
     {
         throw new NotImplementedException();
     }
-
-    protected virtual void Dispose(bool disposing){
-        if(!this.disposed && disposing){
-            _context.Dispose();
-        }
-        this.disposed = true;
-    }
-    public void Dispose()
-    {
-        Dispose(true);
-        GC.SuppressFinalize(this);
-    }
-
     public object GetEmployee(int id)
     {
         var query = (from x in _context.Employees
@@ -85,7 +68,20 @@ public class UnitOfWork : IUnitOfWork
 
         return query.First();
     }
+    public object GetEmployeeByDepartment(int id)
+    {
+        var query = (from x in _context.Employees
+                        where (x.DepartmentId == id)
+                        select new {
+                            x.DocumentId,
+                            x.Name,
+                            x.CurrentPosition,
+                            x.Salary,
+                            Project = (from a in _context.Projects where (a.Id.Equals(x.ProjectId)) select a.Name).ToList()
+                        }).ToList();
 
+        return query;
+    }
     public object GetEmployees()
     {
         var query = (from x in _context.Employees
@@ -101,17 +97,14 @@ public class UnitOfWork : IUnitOfWork
 
         return query;
     }
-
     public TblEmployee SetEmployee(TblEmployee employee)
     {
         throw new NotImplementedException();
     }
-
     public TblEmployee UpdateEmployee(TblEmployee employee)
     {
         throw new NotImplementedException();
     }
-
     public TblPositionHistory GetPositionByEmployeeId(int id){
 
         var query = (from x in _context.PositionHistories
@@ -123,5 +116,16 @@ public class UnitOfWork : IUnitOfWork
     public void save()
     {
         _context.SaveChanges();
-    } 
+    }
+    protected virtual void Dispose(bool disposing){
+        if(!this.disposed && disposing){
+            _context.Dispose();
+        }
+        this.disposed = true;
+    }
+    public void Dispose()
+    {
+        Dispose(true);
+        GC.SuppressFinalize(this);
+    }
 }

@@ -1,5 +1,6 @@
 using PruebaTecnica.WebApi.DI.Application;
 using PruebaTecnica.WebApi.DI.Infrastructure;
+using PruebaTecnica.WebApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -23,6 +24,8 @@ app.UseSwaggerUI();
 app.UseHttpsRedirection();
 
 app.MapControllers();
+
+app.UseMiddleware(typeof(ConsoleLogMiddleware));
 app.UseRouting();
 
 app.Run();

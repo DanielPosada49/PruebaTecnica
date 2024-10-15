@@ -1,5 +1,6 @@
 using PruebaTecnica.Application.Contracts;
 using PruebaTecnica.Application.UseCase;
+using PruebaTecnica.WebApi.Extensions;
 
 namespace PruebaTecnica.WebApi.DI.Application;
 
@@ -10,6 +11,8 @@ public static class DependencyInjection
         services.AddTransient<IEmployeeUseCase, EmployeeUseCase>();
         services.AddTransient<IPositionHistoryUseCase, PositionHistoryUseCase>();
 
+        //Middleware
+        services.AddTransient<ConsoleLogMiddleware>();
         return services;
     }
 }

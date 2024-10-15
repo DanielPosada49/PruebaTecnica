@@ -10,6 +10,7 @@ public interface IUnitOfWork : IDisposable
     IRepository<TblPositionHistory> PositionHistory { get; }
     object GetEmployees();
     object GetEmployee(int id);
+    object GetEmployeeByDepartment(int id);
     TblEmployee SetEmployee(TblEmployee employee);
     TblEmployee UpdateEmployee(TblEmployee employee);
     TblEmployee DeleteEmpployee(int id);

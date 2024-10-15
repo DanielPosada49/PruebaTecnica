@@ -27,6 +27,15 @@ namespace PruebaTecnica.WebApi.Controllers
             return await Task.FromResult(StatusCode(StatusCodes.Status200OK, result));
         }
 
+        [HttpGet]
+        [Route("GetEmployessByDepartmenId")]
+        public async Task<IActionResult> GetEmployessByDepartmenId([FromQuery] int id){
+
+            var employess = await employeeUseCase.GetEmployeeByDepartmenId(id);
+            var result = Utilities.CreateResponse(StatusCodes.Status200OK, JsonConvert.SerializeObject(employess));
+            return await Task.FromResult(StatusCode(StatusCodes.Status200OK, result));
+        }
+
         [HttpPost("CreateEmployee", Name = "CreateEmployee")]
         public async Task<IActionResult> CreateEmployee([FromBody] EmployeeRequest employee){
              var create = await employeeUseCase.CreateEmployee(employee);
@@ -41,7 +50,7 @@ namespace PruebaTecnica.WebApi.Controllers
              return await Task.FromResult(StatusCode(StatusCodes.Status200OK, result));
         }
 
-        [HttpPost("UpdateEmployee", Name = "UpdateEmployee")]
+        [HttpPut("UpdateEmployee", Name = "UpdateEmployee")]
         public async Task<IActionResult> UpdateEmployee([FromBody] UpdateEmployeeRequest employee){
 
             int statusCodes;
