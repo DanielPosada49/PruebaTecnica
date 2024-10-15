@@ -2,12 +2,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace PruebaTecnica.Domain.Request;
 
-public class EmployeeRequest
+public class EmployeeRequest : DocumentRequest
 {
-    [Required(ErrorMessage = "{0} es requerido")]
-    [RegularExpression(@"^([0-9])+$", ErrorMessage = "La cadena no tiene el formato correcto")]
-    public int Document { get; set; }
-
     [Required(ErrorMessage = "{0} es requerido")]
     [StringLength(100, MinimumLength = 3)]
     [RegularExpression(@"^([a-zA-Z\s])+$", ErrorMessage = "La cadena no tiene el formato correcto")]

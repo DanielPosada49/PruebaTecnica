@@ -10,7 +10,7 @@ public class EmployeeUseCase(IUnitOfWork unitOfWork, IPositionHistoryUseCase pos
     public Task<object> CreateEmployee(EmployeeRequest employeeRequest)
     {
         TblEmployee employee = new TblEmployee(){
-            DocumentId = employeeRequest.Document,
+            DocumentId = int.Parse(employeeRequest.Document),
             Name = employeeRequest.Name,
             CurrentPosition = employeeRequest.CurrentPosition,
             Salary = employeeRequest.Salary,
@@ -25,7 +25,7 @@ public class EmployeeUseCase(IUnitOfWork unitOfWork, IPositionHistoryUseCase pos
             throw new Exception("Error al crear el empleado", ex);
         }
 
-        positionHistoryUseCase.AddHistory(employeeRequest.Document, employeeRequest.CurrentPosition);
+        positionHistoryUseCase.AddHistory(int.Parse(employeeRequest.Document), employeeRequest.CurrentPosition);
 
         return Task.FromResult((object)true);
     }

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PruebaTecnica.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6869885e73030d2631d4446e1858e0eb4dbaa6e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e41a92e090b56e2b2049fd052e856350ed10c572")]
 [assembly: System.Reflection.AssemblyProductAttribute("PruebaTecnica.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PruebaTecnica.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
